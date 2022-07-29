@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>salah of qaza</h1>
+    age: <br>
+    <input type="number" id="salah"><br>
+    <button onclick="let age=getElementById('salah').value;
+    let qazaSalahYear=age-12;
+    let totalDay=365*qazaSalahYear;
+    let totalSalah=totalDay*5
+    let result='The total salah qaza is '+totalSalah;
+    document.getElementById('heading5').innerText=result;
+    ">salah of qaza</button>
+    <p id="heading5"></p>
+    <h1>zakat</h1>
+    name of person:<br>
+           <input type="name" id="zakat">
+            <br>
+    Totale Amount:<br>
+         <input type="number" id="totalAmount">
+        <br>
+    
+    
+    <button onclick="let zakat=document.getElementById('zakat').value;
+      document.getElementById('heading').innerText=zakat;
+      ">name</button>
+
+    <button onclick="let amount=document.getElementById('totalAmount').value;
+    let zakatAmount=amount/40;
+      document.getElementById('heading1').innerText=zakatAmount;
+    ">Calculate zakat</button><br>
+    <h2 id="heading"></h2>
+    <h2 id="heading1"></h2><br>
+
+
+    <h1>share of Miras</h1><br>
+    Total Amount:<br>
+    <input type="number" id="Share"><br><br>
+    <button onclick="let totalAmount=document.getElementById('Share').value;
+    let wifeShare=totalAmount/8;
+    let sonshare=totalAmount-wifeShare;
+    let ful='Total Amount is'+ totalAmount +', the share of waife is ' + wifeShare+' and the share of son is '+sonshare;
+    document.getElementById('heading3').innerText=ful;
+    ">Calculate Share</button>
+    <p id="heading3"></p>
+
+    <h1>profit</h1>
+    Total profit: <br>
+    <input type="number" id="profit"><br>
+    <button onclick="let totalprofit=getElementById('profit').value;
+    let yasirshare=40/100;
+    let babarshare=60/100;
+    let yasirprofit=totalprofit*yasirshare;
+    let babarprofit=totalprofit*babarshare;
+    let fu='The Total profit is '+totalprofit+' ,the profit of yasir is '+yasirprofit+' and the babar profit is '+babarprofit;
+    document.getElementById('heading4').innerText=fu;
+   ">calculate profit</button>
+   <p id="heading4"></p>
